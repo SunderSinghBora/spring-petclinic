@@ -1,6 +1,6 @@
 FROM alpine/git
 WORKDIR /app
-RUN git clone https://github.com/spring-projects/spring-petclinic.git (1)
+RUN git clone https://github.com/SunderSinghBora/spring-petclinic.git (1)
 FROM maven:3.5-jdk-8-alpine
 WORKDIR /app
 COPY --from=0 /app/spring-petclinic /app (2)
